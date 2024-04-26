@@ -3,4 +3,3 @@ pypdf
 typing
 flask
 flask-cors
-pypdf-strreplace
