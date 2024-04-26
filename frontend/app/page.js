@@ -18,7 +18,7 @@ export default function Home() {
 
 
 
-      await axios.post("http://localhost:5000/upload-pdf", formData, {
+      await axios.post("https://raddi.onrender.com/upload-pdf", formData, {
         responseType: 'blob'
       })
         .then((res) => {
