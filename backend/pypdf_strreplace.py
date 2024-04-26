@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
 import argparse
-import sys
 import io
-import binascii
 import pypdf
 from typing import Any, Callable, Dict, Tuple, Union, cast
 from pypdf.generic import DictionaryObject, NameObject, RectangleObject, ContentStream, ArrayObject
 from pypdf.generic._base import TextStringObject, ByteStringObject, NumberObject, FloatObject
 from pypdf.constants import PageAttributes as PG
 from pypdf._cmap import build_char_map
-import pprint
 
 class CharMap:
     def __init__(self, subtype, halfspace, encoding, map, ft):
